@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>ServerInfoConfigration</class>
  <widget class="QWidget" name="ServerInfoConfigration">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -20,12 +23,6 @@
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
         <widget class="QLabel" name="label">
-         <property name="font">
-          <font>
-           <family>Fira Mono Medium</family>
-           <pointsize>11</pointsize>
-          </font>
-         </property>
          <property name="text">
           <string>ServerIp</string>
          </property>
@@ -33,12 +30,6 @@
        </item>
        <item>
         <widget class="QLabel" name="label_2">
-         <property name="font">
-          <font>
-           <family>Fira Mono Medium</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
          <property name="text">
           <string>Server User name</string>
          </property>
@@ -46,12 +37,6 @@
        </item>
        <item>
         <widget class="QLabel" name="label_3">
-         <property name="font">
-          <font>
-           <family>Fira Mono Medium</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
          <property name="text">
           <string>Server Password</string>
          </property>
@@ -59,12 +44,6 @@
        </item>
        <item>
         <widget class="QLabel" name="label_4">
-         <property name="font">
-          <font>
-           <family>Fira Mono Medium</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
          <property name="text">
           <string>Loacl Path</string>
          </property>
@@ -72,12 +51,6 @@
        </item>
        <item>
         <widget class="QLabel" name="label_5">
-         <property name="font">
-          <font>
-           <family>Fira Mono Medium</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
          <property name="text">
           <string>Remote Path</string>
          </property>
@@ -88,10 +61,10 @@
      <item row="0" column="1">
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="lineEdit_IP"/>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_2"/>
+        <widget class="QLineEdit" name="lineEdit_UserName"/>
        </item>
        <item>
         <widget class="QLineEdit" name="lineEdit_Password">
@@ -103,19 +76,19 @@
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
-          <widget class="QLineEdit" name="lineEdit_4"/>
+          <widget class="QLineEdit" name="lineEdit_LocalPath"/>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton">
+          <widget class="QPushButton" name="pushButton_FileBrowser">
            <property name="text">
-            <string>PushButton</string>
+            <string>File browser</string>
            </property>
           </widget>
          </item>
         </layout>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_5"/>
+        <widget class="QLineEdit" name="lineEdit_RemotePath"/>
        </item>
       </layout>
      </item>

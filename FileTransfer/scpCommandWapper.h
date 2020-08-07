@@ -8,7 +8,7 @@ class ScpCommandWapper : public QObject
 
 public:
 	using FinshNotifyFunction = std::function<void(int, QProcess::ExitStatus)>;
-	ScpCommandWapper(QObject *parent);
+	ScpCommandWapper(QObject *parent=nullptr);
 	~ScpCommandWapper();
 	bool startScp(const QString& scpCommand, FinshNotifyFunction userFinshNotifyFunction);
 private:

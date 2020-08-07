@@ -1,5 +1,4 @@
 #include "sftpWapper.h"
-
 sftpWapper::sftpWapper(const SFPSession& sessionData)
 	: m_sessionData(sessionData)
 {

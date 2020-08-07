@@ -6,6 +6,7 @@
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkDiskCache>
 #include "ServerInfoConfigration.h"
+#include "scpCommandWapper.h"
 #include "ui_FileTransfer.h"
 
 class FileTransfer : public QMainWindow
@@ -19,4 +20,5 @@ private:
     Ui::FileTransferClass ui;
 	QFileSystemWatcher m_fileWatcher;
 	std::unique_ptr<ServerInfoConfigration> m_serverInfoConfigrationForm;
+    ScpCommandWapper m_scpCommandWapper;
 };
